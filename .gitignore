@@ -1,0 +1,27 @@
+# Virtual environment
+.venv/
+
+# Environment variables / secrets
+.env
+
+# Python bytecode (generated when Python runs your code)
+__pycache__/
+*.pyc
+
+# Distribution / packaging (generated when you build your PyPI)
+dist/
+build/
+*.egg-info
+
+# Test / coverage reports
+.coverage
+htmlcov/
+.pytest_cache/
+
+# IDE settings (if you or teammate use VS Code, PyCharm, etc.)
+.vscode/
+.idea/
+
+#OS junk files
+.DS_Store
+Thumbs.db

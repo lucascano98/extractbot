@@ -1,0 +1,38 @@
+[project]
+name = "extractbot"
+version = "0.1.0"
+description = "AI-powered CLI that extracts actionable tasks from emails and meeting transcripts"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+authors = [{name = "Lucas Cano", email = "lucascano.dev@outlook.com"}]
+dependencies = [
+	"typer>=0.12.0",
+	"rich>=13.0.0",
+	"google-genai>=1.0.0",
+	"pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+	"pytest>=8.0.0",
+	"pytest-cov>=5.0.0",
+	"ruff>=0.5.0",
+]
+
+[project.scripts]
+extractbot = "extractbot.cli:app"
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tools.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
