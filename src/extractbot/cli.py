@@ -1,8 +1,10 @@
 import sys
 import typer
+import json
 from typing import Annotated
 from importlib.metadata import version
 from rich.console import Console
+from rich.markdown import Markdown
 from rich.table import Table
 from enum import StrEnum, auto
 
@@ -52,4 +54,14 @@ def parse(path: Annotated[str, typer.Argument()],
         err_console.print(f"Input is empty")
         raise typer.Exit(code=1)
 
-    console.print(data)
+
+    if format == Format.JSON:
+        result = {"text": data}
+        console.print_json(json.dumps(result))
+    elif format == Format.MARKDOWN:
+        md = Markdown(data)
+        console.print(md)
+    else:
+        table = Table("Text")
+        table.add_row(data)
+        console.print(table)
