@@ -1,0 +1,34 @@
+#launch-war-room
+
+alex  9:12 AM
+Morning everyone. Yesterday’s deploy looked mostly good, but we still have some weird timeout spikes in EU regions.
+
+jamie  9:13 AM
+Yeah I saw that too. I can dig through the logs later today.
+
+alex  9:14 AM
+Appreciate it. Also, can someone update the status page? It still says “scheduled maintenance” from last night.
+
+nina  9:16 AM
+I’ll handle the status page update in a few minutes.
+
+matt  9:18 AM
+BTW the finance team asked whether we exported the updated usage reports yet.
+
+alex  9:19 AM
+Not yet. Matt, could you send those over before EOD?
+
+matt  9:19 AM
+Yep.
+
+jamie  9:22 AM
+Random note — the retry logic in the notification service is probably worth revisiting. It’s getting noisy under load.
+
+alex  9:23 AM
+Agreed. Let’s create a follow-up ticket for that after launch.
+
+nina  9:25 AM
+Also somebody should probably clean up the old feature flags this week. There are like 20 stale ones sitting around.
+
+alex  9:26 AM
+Good call.
