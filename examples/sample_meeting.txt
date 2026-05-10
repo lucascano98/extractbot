@@ -1,0 +1,31 @@
+[Product Sync Meeting — Transcript Excerpt]
+
+Emma: Alright, quick status check before we move on to launch readiness.
+
+Tom: The mobile team is mostly on track. We still have a few open crash reports from Android users though.
+
+Emma: Okay. Can you make sure those are triaged before the end of the week?
+
+Tom: Yep, I’ll handle that.
+
+Rachel: Support also mentioned confusion around the new billing flow. The help center articles are outdated.
+
+Emma: Good catch. John agreed to review the API docs before next sprint, so maybe we can bundle the support documentation updates into that effort too.
+
+John: Yeah, I can take both. I’ll send a draft around early next week.
+
+Lisa: We’re still waiting on the external vendor to confirm pricing for the SMS integration.
+
+Emma: ACTION: Lisa will coordinate with the vendor and get final numbers by Thursday.
+
+Kevin: One more thing — the QA environment was down for about two hours yesterday.
+
+Emma: Do we know why?
+
+Kevin: Not yet. I think someone should audit the recent infrastructure changes because the outage lines up with the deployment window.
+
+Emma: Alright. Priya, can you investigate the deployment logs and report back tomorrow?
+
+Priya: Sure, I’ll take a look after this meeting.
+
+Emma: Perfect. Anything else before we wrap up?

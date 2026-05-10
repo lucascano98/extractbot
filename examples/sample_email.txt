@@ -1,6 +1,19 @@
-Hi Isabel,
+Subject: Q3 Launch Prep and Outstanding Items
 
-Please review today's daily stand-up notes, summarize them, and email it to Savannah. Please don't forget about this Friday's pizza party.
+Hi team,
 
-Best,
-Wilheim
+We’re getting close to the Q3 rollout, but there are still a few loose ends we need to tighten up before next week’s stakeholder review.
+
+Sarah, please have the updated dashboard mockups finalized by Friday afternoon so marketing has time to review them before the presentation.
+
+Also, it would be great if someone could look into the recurring CI failures on the billing-service branch. The deploy pipeline has been flaky since Tuesday and it’s starting to slow everyone down.
+
+Mike, can you coordinate with legal about the revised customer onboarding language? We need approval before the release candidate is locked.
+
+I also want us to revisit the analytics backlog. Priya, please pull together a short summary of the highest-priority tracking gaps and send it around before Monday’s standup.
+
+One more thing — if anybody has bandwidth, we should probably verify that the staging environment matches production configs. I’m not convinced they’re fully in sync after the last infrastructure update.
+
+Thanks everyone,
+Daniel
+Engineering Manager
