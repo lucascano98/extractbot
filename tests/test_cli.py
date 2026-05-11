@@ -20,7 +20,7 @@ def test_error_file_not_found():
     assert "Error: [Errno 2] No such file or directory: 'imaginary_text.txt'" in result.output
 
 def test_error_empty_file():
-    result = runner.invoke(app, ["parse", "examples/sample_meeting.txt"])
+    result = runner.invoke(app, ["parse", "examples/sample_empty.txt"])
     assert result.exit_code == 1
     assert "Input is empty" in result.output
 
